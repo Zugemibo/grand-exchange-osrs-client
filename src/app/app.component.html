@@ -1,0 +1,109 @@
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+      <div class="sidebar-header">
+          <h3>OSRS Price Checker</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+          <p>Services</p>
+          <li>
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fa fa-retweet"></i>
+                    Flipping
+              </a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                      <a [routerLink]="['/itemIndicator']">Item indicator</a>
+                  </li>
+                  <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                      <a [routerLink]="['/hightestVolumes']">Hightest volumes</a>
+                  </li>
+                  <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                      <a [routerLink]="['/hightestMargins']">Hightest margins</a>
+                  </li>
+              </ul>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/highAlchemy']">
+                <i class="fa fa-fire"></i>
+                High Alchemy
+              </a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a [routerLink]="['/itemLookup']">
+                <i class="fa fa-search"></i>
+                Item Lookup
+              </a>
+          </li>
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+          <li>
+              <a href="https://rsbuddy.com/exchange" class="article" target="_blank">RSBuddy Exchange</a>
+          </li>
+          <li>
+            <a href="https://secure.runescape.com/m=itemdb_oldschool/" class="article" target="_blank">Official OSRS Grand Exchange</a>
+        </li>
+        <li>
+            <a href="https://secure.runescape.com/m=itemdb_rs/" class="article" target="_blank">Official Runescape Grand Exchange</a>
+        </li>
+      </ul>
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+              <button type="button" id="sidebarCollapse" class="btn btn-secondary">
+                  <i class="fa fa-align-left"></i>
+                  <span>Toggle Sidebar</span>
+              </button>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav ml-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Page</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <router-outlet></router-outlet>
+      <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"  href="mailto:dwdptk@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <hr>
+            </div>	
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><a>© All rights reserved. Dawid Piątek</a></p>
+                </div>
+                <hr>
+            </div>	
+        </div>
+    </section>
+  </div>
+</div>

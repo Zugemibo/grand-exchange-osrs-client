@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+}
+
+.short-box {
+  margin: 2px;
+  width : 110px;
+}
+
+#optional {
+  display: none;
+}
+
+#radioUser:checked~#optional {
+  display: block;
+}
+
+input[type=checkbox]:checked~#minimal {
+  display: inline;
+}
+
+input[type=checkbox]:checked~#maximal {
+  display: inline;
+}
+
+#minimal {
+  display: none;
+}
+
+#maximal {
+  display: none;
+}
